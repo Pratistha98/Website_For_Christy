@@ -1,0 +1,93 @@
+<% include ../partials/header %>
+	<link rel="stylesheet" href="/stylesheets/main.css">
+<body id="fontdesign">
+<div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+    </div>
+    
+
+<div class="subway-background"></div>
+<main>
+<h1>The Subway Memory</h1>
+<h3>Font Design</h3>
+<h3>Software: Adobe Illustrator</h3>
+<h3>Duration: 11 May 2019 - 25 May 2019</h3>
+
+<div class="three-columns-grid">    
+<div>
+    <h3>PROJECT BRIEF</h3>
+    <p>This is a class project completed in ARTDM 224: Typography in the Spring semester of 2019 at Diablo Valley College. I designed a font based on the subway map in Shenzhen, China. </p>
+    </div>
+<div>
+   <h3>PROMPT</h3>
+   <p>Design a Font that tells my personal story</p> 
+</div>
+
+<div>
+    <h3>GOALS</h3>
+    <p>1. Memorize my stories with Shenzhen Subway</p>
+    <p>2. Show the development of Shenzhen Subway</p>
+    </div>
+</div>  
+    
+
+<h2>INSPIRATION</h2>
+<p>My inspiration came from the transportation I used most often in my hometown Shenzhen, China. Shenzhen has one of the most development metro systems in China. It was built in 2004. Now, Shenzhen has eight metro lines across the city, and there are seven lines under construction. I like taking Metro because it's convenient, fast, and clean. </p>
+<div><img class="fit" src="../images/graphic/shenzhenmetromap.jpg" alt="Shenzhen Subway Map"></div>
+
+
+<h2>PROCESS</h2>
+  <p>The subway map reminds me of the time I spent with my friends on subway. I found the shapes of letters from the map as the foundation of this font.</p>
+  <p>I emphasized five stations on the map: NANSHAN, DONGJIAOTOU, HONGLANGBEI, HOUHAI, and TAOYUAN. Each represents my home, middle school, high school, and downtown. I went to these stations very frequently. They can tell my stories with schools, friends, and home. Therefore, I selected the colors of the lines that pass these five stations and applied them to my font. I rounded the corners of lines to make the letters look like subway lines.</p>
+    <img class="fit" src="../images/graphic/subwaymemory.jpg" alt="ideation">
+
+
+<h2>COLOR</h2>
+    <img class="fit" src="../images/graphic/subway_color.jpg" alt="Colors">
+
+
+<h2>ALPHABET</h2>
+     <p>I'm proud that Shenzhen is always developing its metro system. It will never stop its step of improving and increasing residents' positive experience. With this idea, I added grey circles to the end of some letters to imply the future stations. I believe more stations and lines will come up in the near future. The development of Shenzhen metro is on-growing and aggressive.</p> 
+<img class="fit" src="../images/graphic/alphabet_presentation.jpg" alt="A-Z Alphabet">
+
+<h2>POSTER</h2>
+<div><img class="fit" src="../images/graphic/typeposter.jpg" alt="Poster"></div>
+
+
+<div class="same-row">
+<button class="previous-button"><a href="inspireoakland.html">Previous</a></button>
+    <button class="next-button"><a href="demandposter.html">Next</a></button>
+</div>
+
+</main>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
+</script>
+
+<button onclick="topFunction()" id="myBtn" title="Back to top"><img src="../images/back-to-top.svg" width=35px></button>
+<script>
+    window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.getElementById("myBtn").style.display = "block";
+  } else {
+    document.getElementById("myBtn").style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+</script>       
+<% include ../partials/footer %>

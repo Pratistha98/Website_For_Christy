@@ -1,0 +1,94 @@
+<% include ../partials/header %>
+	<link rel="stylesheet" href="/stylesheets/main.css">
+
+<body id="inspireoakland">
+  <div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+    </div>
+
+  
+<div class="background-header"></div>
+    
+<main>
+
+<h1>2019 Inspire Oakland Billboard Design Competition</h1>
+<h3>Illustration, Graphic Design</h3>
+<h3>Software: Adobe Illustrator</h3>
+<h3>Duration: April 2019 - May 2019</h3>
+<h3>Hosted by <a href="www.bridgegood.com">BRIDGEGOOD</a></h3>
+
+<div class="three-columns-grid">
+    <div>
+        <h3>PROJECT BRIEF</h3>
+<p>In April 2019, I learned about a design competition from a nonprofit organization, BRIDGEGOOD. BRIDGEGOOD was searching for an iconic design that answers, "What about Oakland inspires you?" I created an original design using my creativity, vision of diversity, and spirit of innovation to inspire East Bay residents and emerging artists.</p>
+    </div>
+    
+    <div>
+        <h3>PROMPT</h3>
+<p>What Does Oakland Inspire Me? How can My Design Inspire Others?</p>
+    </div>
+    
+    <div>
+    <h3>GOALS</h3>
+    <p>1. Express Oakland young and growing power</p>
+    <p>2. Showcase Oakland athletic spirit</p>
+    </div>
+</div>
+    
+<h2>INSPIRATIONS</h2>
+<p>Every time I come to Oakland to visit museums and have foods in the Chinatown, I always see people are riding the scooters on the street. Riding scooters is not only a transportation method, but also a way of entertainment. I’m inspired by this very spirited and cheerful city-landscape. </p>
+<p>The Oakland Port is the fifth busiest container port in the US because of its strong leadership and constant innovation. Numerous ships come in and out of the port. As more and more ships come more frequently, Oakland is growing and thriving.</p>
+<p>In March, I attended Oakland Running Festival as a volunteer, I was happy to be part of this community that I saw people from different ages, genders, races, and ethnicities all joined this celebration. I’m inspired by their perseverance, excitement, and vigor. I feel the youthful, energetic, and growing power from them. </p>
+<img class="fit" src="../images/graphic/inspireoakland-13.jpg" alt="sketches">
+
+<h2>FINAL DESIGN</h2>
+<p>I incorporate my inspirations. The teenagers are the future of Oakland who bring energy and creativity to the community. I have each of the kids wears a tank that each represent A’s, raiders, and warriors. They have their hands open widely to show their enthusiasm and passion as being a fan of the local sports team.</p>
+
+<p>The outline of Oakland City Hall, tribune tower, and the pagoda at Chinese Garden Park on the back to show Oakland is growing and developing in different aspects. I hope my design will inspire more people to get inspiration from Oakland’s youth, sports, and development. At the same time, people are inspired to engage in the community and be creative.</p>
+<img class="fit" src="../images/graphic/inspireoakland-15.jpg" alt="final design">
+
+
+<h2>PRESENTATION</h2>
+<p>As a top 18 design finalist, I was given the chance to pitch my design at Adobe Emeryville at May 9th, 2019. I'm glad to share my design to professionals as well as talented artists and designers in the Bay Area. It's also a great opportunity to learn from my fellows.</p>
+<img class="fit" src="../images/graphic/inspireoakland-12.jpg" alt="presentation pictures">
+<img class="fit" src="../images/graphic/inspireoakland-14.jpg" alt="certificate">
+    
+<div class="same-row">
+<button class="previous-button"><a href="mxtea.html">Previous</a></button>
+    <button class="next-button"><a href="fontdesign.html">Next</a></button>
+</div>
+
+</main>
+
+
+<script>
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
+</script>
+
+<button onclick="topFunction()" id="myBtn" title="Back to top"><img class="backtop" src="../images/back-to-top.svg"></button>
+<script>
+    window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.getElementById("myBtn").style.display = "block";
+  } else {
+    document.getElementById("myBtn").style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+</script>       
+    
+<% include ../partials/footer %>

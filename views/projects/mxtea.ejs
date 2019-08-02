@@ -1,0 +1,108 @@
+<% include ../partials/header %>
+	<link rel="stylesheet" href="../stylesheets/main.css">
+
+<body id="mxtea">
+<div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+    </div>
+    
+  
+<div class="mxtea-background"></div>
+
+<main>
+<h1>Mx. Tea</h1>
+<h3>Branding, Illustration, Packaging</h3>
+<h3>Adobe Illustration</h3>
+<h3>Feburary 2019 - May 2019</h3>
+
+
+ 
+<div class="three-columns-grid">    
+<div>
+    <h3>PROJECT BRIEF</h3>
+    <p>Few people drink Chinese tea nowadays which lead the Chinese Tea Culture to diminish. I remember the importance of tea in my family such as preparing high-quality tea for guests, dedicating tea to our ancestors, and enjoying tea in the morning. I rebranded a tea brand and designed a Mid-Autumn Festival Edition to attract the young generation’s interests in tea and tea cultures. </p>
+    </div>
+<div>
+   <h3>PROBLEM</h3>
+   <p>The young generation lack interests and knowledge of Chinese tea and traditional customs.</p> 
+</div>
+
+<div>
+    <h3>GOALS</h3>
+    <p>1. Publicize the importance and benefits of drinking Chinese Tea</p>
+    <p>2. Increase understanding of Chinese Tea Cultures and traditional customs</p>
+    <p>3. Incorporate Chinese Tea in people’s everyday lives</p>
+    </div>
+</div>  
+
+<h2>BRAINSTORMING</h2>
+<img class="fit" src="../images/graphic/mxtea/layout-01.jpg" alt="brainstorming picture">
+
+    
+<h2>RESEARCH</h2>
+<p>One of the situations that people drink tea is in Mid-Autumn Festival. People usually pair tea with mooncakes because mooncakes are sweet and heavy. Tea can cleanse the palate and wash the mooncakes down. Therefore, I decided to use Mid-Autumn Festival as a starting point to sell my products and grab customers’ attention. </p>
+<img class="fit" src="../images/graphic/mxtea/layout-02.jpg" alt="research process">
+
+<h2>PERSONA</h2>
+<img class="fit" src="../images/graphic/mxtea/layout-03.jpg" alt="two persona">
+    
+<h2>ILLUSTRATION</h2>
+<p>I selected six traditional and local customs of Mid-Autumn Festival in Guangdong province. I vectorized my sketches in Adobe Illustrator and added the name of the custom on the side to help people identify the customs. These illustrations remind people their homes and traditions. The lines in the background imply the tea field.</p>
+<img class="fit" src="../images/graphic/mxtea/layout-04.jpg" alt="illustration sketches and digital version">
+
+<h2>LOGO</h2>
+<img class="fit" src="../images/graphic/mxtea/layout-11.jpg" alt="logo process">
+ 
+<h2>COLOR</h2>
+<img class="fit" src="../images/graphic/mxtea/layout-05.jpg" alt="colors">
+
+<h2>PACKAGE PROTOTYPE</h2>
+<p>Each package has a unique illustration and color. Six of them can fit in a hexagon gift box. </p>
+<img class="fit" src="../images/graphic/mxtea/layout-06.jpg" alt="package prototype">
+
+<h2>FINAL PRODUCT</h2>
+<img class="fit" src="../images/graphic/mxtea/layout-07.jpg" alt="package photographs">
+<img class="fit" src="../images/graphic/mxtea/layout-08.jpg" alt="brand package mockups">
+<img class="fit" src="../images/graphic/mxtea/layout-09.jpg" alt="brand booklet">
+    
+<h2>WEB DESIGN</h2>
+<a href="https://xd.adobe.com/view/e4bd297b-fd7f-428e-4403-da3b2d72989b-928c/?fullscreen">Link</a>
+<img class="fit" src="../images/graphic/mxtea/layout-10.jpg" alt="Adobe XD Mockups">
+    
+<div class="same-row">
+<button class="previous-button"><a href="../index.html">Previous</a></button>
+    <button class="next-button"><a href="inspireoakland.html">Next</a></button>
+</div>
+</main>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
+</script>
+
+<button onclick="topFunction()" id="myBtn" title="Back to top"><img src="../images/back-to-top.svg" width=35px></button>
+<script>
+    window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.getElementById("myBtn").style.display = "block";
+  } else {
+    document.getElementById("myBtn").style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+</script>    
+    
+<% include ../partials/footer %>

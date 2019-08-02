@@ -1,0 +1,82 @@
+<% include ../partials/header %>
+	<link rel="stylesheet" href="/stylesheets/main.css">
+
+<body id="demand poster">
+
+<div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+    </div>
+
+
+<main>
+    <h1>DVC Students Demand Poster Competition</h1>
+    <h3>Typography, Poster Design</h3>
+    <h3>Software: Adobe Illustrator</h3>
+    <h3>Duration: 27 April 2019-9 May 2019</h3>
+   
+    <div class="three-columns-grid">    
+<div>
+    <h3>PROJECT BRIEF</h3>
+    <p>The DVC student demands came in a letter drafted in March 2019 in response to recent acts of racism on our campus. Student leaders staged a student walk-out and protest and created a list of demands. I designed this poster series to increase students' voices and demand an effective response from the school administration.</p>
+    </div>
+<div>
+   <h3>PROBLEM</h3>
+   <p>Several acts of Racist graffiti happened on campus. The school needs further actions to increase racial justice.</p> 
+</div>
+
+<div>
+    <h3>GOALS</h3>
+    <p>1. Share my voice about racial justice</p>
+    <p>2. Support the rallying letter of demands created by DVC students and submitted to the DVC administration</p>
+    <p>3. Demand to call for intentional and deliberate actions to achieve racial justice on campus.</p>
+    </div>
+</div>  
+
+    
+    <h2>FINAL DESIGN</h2>
+<p>I selected three main colors which convey a tone of liberty, movement, and strong emotions. The fist on the back shows DVC students’ determination and power. I emphasized the words “response” and “racism” especially by making the text larger and adding extra textures. The raising hands insider the word “response” mean that DVC students are calling and waiting for a response that fully solves our needs. The black circle and the dash on the word “racism” shows acts of racism are prohibited on campus. I kept the whole design straightforward, clean, and appealing. I hope students will be attracted by the colors and the fist in the poster in order to learn more about this campus-wide activity and strengthen our demand.</p>
+<img class="fit" src="../images/graphic/demandposters.jpg" alt="DVC Library Exhibition">
+
+
+    <h2>EXHIBITION</h2>
+<img class="fit" src="../images/graphic/libraryexhibition.jpg" alt="DVC Library Exhibition">
+
+    
+    
+    <div class="same-row">
+<button class="previous-button"><a href="fontdesign.html">Previous</a></button>
+    <button class="next-button"><a href="kalegallery.html">Next</a></button>
+</div>
+    
+</main>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
+</script>
+
+<button onclick="topFunction()" id="myBtn" title="Back to top"><img src="../images/back-to-top.svg" width=35px></button>
+<script>
+    window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.getElementById("myBtn").style.display = "block";
+  } else {
+    document.getElementById("myBtn").style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+</script>       
+	<% include ../partials/footer %>
