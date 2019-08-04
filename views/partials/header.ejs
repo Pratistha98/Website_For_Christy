@@ -5,40 +5,58 @@
     <title>Christy Hu Design</title>
 	<meta name="Author" content="Christy Hu"/>
 	<link rel="stylesheet" href="/stylesheets/nav.css">
-	<link rel="stylesheet" href="/stylesheets/nav.js">
+<script type="text/javascript" src="/stylesheets/nav.js"> </script> 
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<!-- <link rel="stylesheet" href ="/stylesheets/main.css"> -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
 </head>
 <body id="homw">
 
 <header>
-		<nav class="navbar navbar-light navbar-expand-md ">
+
+		 <nav class="navbar navbar-light navbar-expand-md ">
  <a href="/home"><img class="logo" src="images/logo.png" alt="Christy Hu Logo"></a>
 			
   <button class="navbar-toggler fortoggle" type="button" data-toggle="collapse" data-target="#navbarNav"  aria-label="Toggle navigation">
-	<span class="navbar-toggler-icon"></span>
+	    <span class="navbar-toggler-icon" onclick="openNav()"> </span>
+			   <script>
+      function openNav() {
+      document.getElementById("myNav").style.width = "100%";
+      }
+      function closeNav() {
+      document.getElementById("myNav").style.width = "0%";
+      }
+      </script>
   </button>
-  <div class="collapse navbar-collapse " id="navbarNav">
+  <div class="collapse navbar-collapse " id="forDisplay">
 	
 		<ul class="navbar-nav ml-auto">		
-		<li class="nav-pills">
-		<a class="nav-link" href="/mxtea">PROJECT</a></li>
-     
-		<li class="nav-pills">
-		<a class="nav-link" href="/play">PLAY</a> </li>
 		
-		<li class="nav-pills"> 
-		<a class="nav-link" href="/about"> ABOUT</a></li>
+		<a class="nav-link" href="/mxtea">PROJECT</a>
+    	
+		<a class="nav-link" href="/play">PLAY</a> 
+		
+		<a class="nav-link" href="/about"> ABOUT</a>
 		
 
 	</ul>
-</nav>
-		
-		
-		
-   </div>
+  </nav>
+</div>	
+	 <div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="/mxtea">PROJECT</a>
+    <a href="/play">PLAY</a>
+    <a href="/about"> ABOUT</a>
+ 
+  </div>
+</div>
+  
+  
+
+ 
 </header>
